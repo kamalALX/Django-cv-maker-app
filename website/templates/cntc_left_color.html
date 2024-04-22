@@ -1,0 +1,37 @@
+<style>
+  .left-color {
+    height: 100vh;
+    background-color: #ebf5b3; /* Choose your desired color */
+    position: relative; /* Change position to relative */
+  }
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #808080; /* Choose background color for the circle */
+    position: absolute;
+    left: 30px; /* Adjust the left position as needed */
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffff; /* Choose text color */
+  }
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 left-color">
+        <div class="circle" style="top: 20%;">1</div> <!-- 1st circle -->
+        <div class="circle" style="top: calc(20% + 65px);">2</div> <!-- 2nd circle -->
+        <div class="circle" style="top: calc(20% + 130px);">3</div> <!-- 3rd circle -->
+        <div class="circle" style="top: calc(20% + 195px);">4</div> <!-- 4th circle -->
+        <div class="circle" style="top: calc(20% + 260px);">5</div> <!-- 5th circle -->
+    </div>
+
+    <div class="col-md-10"> 
+    </div>
+  </div>
+</div>
+
