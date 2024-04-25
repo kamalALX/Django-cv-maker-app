@@ -1,37 +1,122 @@
 <style>
-  .left-color {
-    height: 100vh;
-    background-color: #ebf5b3; /* Choose your desired color */
-    position: relative; /* Change position to relative */
+
+  .left-yellow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 13%; /* Adjust to cover the desired percentage of the screen */
+    height: 100%;
+    background-color: #e3f9f4;
+    z-index: -1; /* Ensure it stays behind other elements */
   }
-  .circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #808080; /* Choose background color for the circle */
+
+
+  h2 {
+    margin: 50px 0  30px 0;
+  }
+
+  body {
+  }
+
+  .list-ic a {
+    color: black;
+    text-decoration: none;
+	font-weight: 500;
+  }
+
+  
+  .list-ic li {
+    position: relative;
+  }
+
+  .list-ic li span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+	font-weight: 600;
+    text-align: center;
+    line-height: 1.6em;
+    border-radius: 15px;
+    background: black;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+    color: white;
+    position: relative;
+  }
+
+  .list-ic li::before {
+    content: '';
     position: absolute;
-    left: 30px; /* Adjust the left position as needed */
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: #ffffff; /* Choose text color */
+    background: black;
+    z-index: -1;
   }
+
+
+  .list-ic.vertical li {
+    list-style-type: none;
+  }
+
+  .list-ic.vertical li span {
+    margin: 1.4em 0;
+  }
+  .list-ic.vertical li::before {
+    top: -35px;
+    left: 13px;
+    width: 3px;
+    height: 4em;
+  }
+
+  .list-ic li:first-child::before {
+    display: none;
+  }
+
+  <!-- .list-ic .active { -->
+  <!--   background: dodgerblue; -->
+  <!-- } -->
+
+  <!-- .list-ic .active ~ li { -->
+  <!--   background: lightblue; -->
+  <!-- } -->
+
+  <!-- .list-ic .active ~ li::before { -->
+  <!--   background: lightblue; -->
+  <!-- } -->
+
+  .lis {
+	  position: absolute;
+	  top: 10%;
+  }
+
 </style>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2 left-color">
-        <div class="circle" style="top: 20%;">1</div> <!-- 1st circle -->
-        <div class="circle" style="top: calc(20% + 65px);">2</div> <!-- 2nd circle -->
-        <div class="circle" style="top: calc(20% + 130px);">3</div> <!-- 3rd circle -->
-        <div class="circle" style="top: calc(20% + 195px);">4</div> <!-- 4th circle -->
-        <div class="circle" style="top: calc(20% + 260px);">5</div> <!-- 5th circle -->
-    </div>
 
-    <div class="col-md-10"> 
-    </div>
-  </div>
+<div class="left-yellow"></div>
+
+<div class="lis">
+<ul class="list-ic vertical">
+  <li>
+    <span>1</span>
+    <a href="#">Heading</a>
+  </li>
+  <li>
+    <span>2</span>
+    <a href="#">Work History</a>
+  </li>
+  <li>
+    <span>3</span>
+    <a href="#">Education</a>
+  </li>
+  <li>
+    <span>4</span>
+    <a href="#">Skills</a>
+  </li>
+  <li>
+    <span>5</span>
+    <a href="#">Summary</a>
+  </li>
+
+
+</ul>
 </div>
 
