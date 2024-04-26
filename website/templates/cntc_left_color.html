@@ -1,10 +1,13 @@
+{% load static %}
+
 <style>
+
 
   .left-yellow {
     position: fixed;
     top: 0;
     left: 0;
-    width: 13%; /* Adjust to cover the desired percentage of the screen */
+    width: 17%; /* Adjust to cover the desired percentage of the screen */
     height: 100%;
     background-color: #e3f9f4;
     z-index: -1; /* Ensure it stays behind other elements */
@@ -31,12 +34,12 @@
 
   .list-ic li span {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 	font-weight: 600;
     text-align: center;
-    line-height: 1.6em;
-    border-radius: 15px;
+    line-height: 1.8em;
+    border-radius: 50%;
     background: black;
 	border-style: solid;
 	border-width: 2px;
@@ -58,12 +61,12 @@
   }
 
   .list-ic.vertical li span {
-    margin: 1.4em 0;
+    margin: 1.1em 0;
   }
   .list-ic.vertical li::before {
     top: -35px;
-    left: 13px;
-    width: 3px;
+    left: 15px;
+    width: 2.5px;
     height: 4em;
   }
 
@@ -71,27 +74,37 @@
     display: none;
   }
 
-  <!-- .list-ic .active { -->
-  <!--   background: dodgerblue; -->
-  <!-- } -->
+  a:hover {
+    color: darkgray;
+  }
+  
+  .list-ic .active ~ li {
+    background: lightblue;
+  }
 
-  <!-- .list-ic .active ~ li { -->
-  <!--   background: lightblue; -->
-  <!-- } -->
-
-  <!-- .list-ic .active ~ li::before { -->
-  <!--   background: lightblue; -->
-  <!-- } -->
+  .list-ic .active ~ li::before {
+    background: lightblue;
+  }
 
   .lis {
 	  position: absolute;
-	  top: 10%;
+	  top: 19%;
   }
+
+  img {
+    position: relative;
+    top: 30px; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    width: 60px;
+    height: 60px;
+}
 
 </style>
 
+<img src="{% static 'images/kindpng_200151.png' %}" alt="Logo">
 
 <div class="left-yellow"></div>
+
 
 <div class="lis">
 <ul class="list-ic vertical">
