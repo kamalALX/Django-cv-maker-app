@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 24%; /* Adjust to cover the desired percentage of the screen */
+    width: 18%; /* Adjust to cover the desired percentage of the screen */
     height: 100%;
     background-color: #A9BBA6;
     z-index: -1; /* Ensure it stays behind other elements */
@@ -73,6 +73,11 @@
     display: none;
   }
 
+  .list-ic.vertical li.active > span {
+    background-color: white; /* Change to your desired color */
+    border-color: white; /* Adjust border color if needed */
+    color: #ffffff; /* Change text color if needed */
+  }
 
   .lis {
 	  position: fixed;
@@ -81,11 +86,11 @@
 
   img {
     position: relative;
-    top: 30px; /* Adjust as needed */
-    left: 30px; /* Adjust as needed */
-    width: 70px;
-    height: 70px;
-}
+	margin: 2% 2%;
+    width: 10%;
+    max-width: 80px;
+    height: auto;
+  }
 
 </style>
 
