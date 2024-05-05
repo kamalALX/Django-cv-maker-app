@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 19%; /* Adjust to cover the desired percentage of the screen */
+    width: 24%; /* Adjust to cover the desired percentage of the screen */
     height: 100%;
     background-color: #A9BBA6;
     z-index: -1; /* Ensure it stays behind other elements */
@@ -63,30 +63,19 @@
     margin: 1.1em 0;
   }
   .list-ic.vertical li::before {
-    top: -35px;
-    left: 20px;
+    top: -17px;
+    left: 21px;
     width: 2.3px;
-    height: 4em;
+    height: 34px;
   }
 
   .list-ic li:first-child::before {
     display: none;
   }
 
-  a:hover {
-    color: darkgray;
-  }
-  
-  .list-ic .active ~ li {
-    background: lightblue;
-  }
-
-  .list-ic .active ~ li::before {
-    background: lightblue;
-  }
 
   .lis {
-	  position: absolute;
+	  position: fixed;
 	  top: 19%;
   }
 
@@ -131,4 +120,3 @@
 
 </ul>
 </div>
-
